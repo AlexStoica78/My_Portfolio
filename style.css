@@ -1,0 +1,741 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* background: #2a92ab; */  /*  the best background color for My Portfolio*/
+body{
+        background: #2a92ab;
+        color: white;
+        /* background-image: url(images/colorPalette.jpg); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span, 
+ul,
+p{
+    font-family: 'Solway', serif;
+    /* margin: 0 0 15px 0;
+    padding: 0; */
+}
+
+
+
+
+.logo{
+    width: 130px;
+    padding-left: 10px;
+    margin-left: 76px;
+
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background_image.PNG);
+    background-size: cover;
+    background-position: center;
+}
+    
+.container{
+    padding: 10px 10%;
+}  
+
+.container2{
+    padding: 10px 10%;
+} 
+
+/* this code is for contact me form to go down 100 px */
+/* .container .row{
+    padding-top: 100px;
+} */
+
+/* .container .skills-list{
+    
+} */
+
+nav{
+
+    position: fixed;    /* it may help me for sticky nav */
+    z-index: 100;       /* it may help me for sticky nav */
+    top: 0;              /* it may help me for sticky nav */
+    width: 100%;         /* it may help me for sticky nav */ 
+    display: flex;      /* it may help me for sticky nav */
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1000px;
+    margin-top: 20px;
+    flex-wrap: wrap;    /* I removed it for sticky nav */
+}
+
+ul{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/*  */
+nav ul li{
+    display: flex;     /* it may help me for sticky nav */
+    display: inline-block;  /* li horizontally in line  */ 
+    list-style: none;
+    margin: 10px 20px; /*space between the links, 10 pixels from top to bottom and 20 from left and right side */
+}
+
+nav ul li a{
+    color: white;   /* color of the a li */         
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    display: flex;    /* it could be useful for my sticky nav bar  */
+}
+                         /*the lines under nav bar  */
+nav ul li a::after{
+    content: '';
+    width: 0%;    /* the width percentage of the a li underlines   */
+    height: 3px;
+    background: rgb(127, 22, 22);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;  /*the delay time when you hover over li a nav bar underlines */ 
+}
+/*  */
+nav ul li a:hover::after{
+    width: 100%;           /* the width percentage of the a li underlines */ 
+}
+
+/* .header-text{
+    margin-top: 20%;
+    font-size: 30px;
+} */
+
+#carousel{
+    margin-top: 20%;
+    font-size: 30px;
+    
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+/* -------This is the code for Skills------ */
+
+
+.header-text h1 span{     
+    color: rgb(145, 42, 42); /*this is only for the span (two words - see code)  */
+}
+
+span{     
+    color: rgb(127, 22, 22); /*this is only for the span (two words - see code)  */
+}
+
+
+/* -------------------about section------------------------------------------------ */
+
+#about{
+    padding: 80px 0; /* this will add 80px space below the first image and above the second image and 0 below the second picture */
+    color:rgb(186, 196, 199)
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{                   
+    /* flex-basis: 35%; */
+    height: 0px;
+    margin-top: 80px;
+    margin-left: -80px;
+}
+
+.about-col-1 img{     /* this is for about-me image which is inside class .about-col-1 */
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.about-col-2{ 
+    flex-basis: 65%;
+    text-align: left;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-top: 0;
+}
+
+.sub-title3{
+    font-size: 60px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-top: 0;
+    margin-left: -30px;
+}
+                        /* This is for the About-me H1 */
+.sub-title1{    
+    font-size: 60px;
+    font-weight: 600;    
+    color: aliceblue;
+    margin-top: 30px;
+    /* border-bottom: 3px solid #6d0e0e;   this is for the border under the about me */
+    
+}
+
+
+/* .tab-titles{
+    display: flex;
+    margin: 20px 0 40px; 20 px from the top, 0 form left to right, and 40 from the bottom 
+} */
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px; 
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{  /* This is for the red lines under skills, etc */
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(127, 22, 22);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+ul {
+    list-style-type: disc;
+    color: white;
+  }
+
+.active-link.active-link::after{
+    width: 50%;
+
+}
+/*  */
+.tab-contents ul li{  
+    list-style: none; /* this is for ul li, without span  */
+    margin: 20px 0px;  /* 20px from left to right, 0px from top bottom */      
+    /* color: rgb(87, 17, 17); */
+}
+
+.tab-contents ul li span{
+    color: rgb(127, 22, 22);
+    font-size: 15px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* ------------------skills--------------- */
+
+
+
+
+
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* fr stands for fraction */
+    grid-gap: 22px;
+    margin-top: -15px;
+    margin-left: 421px;
+/*  */
+} 
+
+.skills-list div{
+    /* background: rgb(36, 87, 139); */           /* this color is for skills */
+    background: rgb(162, 30, 30);;
+    padding: 20px; 
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s; /* the background will be transformed (moved up) in 0.5 seconds, */
+}
+
+.skills-list div i{
+    font-size: 35px; /* increasing the font size of the icons font awesome */
+    margin-bottom: 20px;
+}
+
+.skills-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.skills-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+/*  */
+.skills-list div:hover{
+    background: rgb(6, 89, 116);
+    transform: translateY(-10px); /* move the skills  a bit up */
+}
+
+/* ---------portfolio---------------- */
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* fr stands for fraction */
+    grid-gap: 150px;
+    margin-top: 50px;
+}
+
+.work2-list2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* fr stands for fraction */
+    grid-gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 135px;
+    margin-left: -110px;
+    margin-right: -100px;
+}
+
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 440px;
+} 
+
+.work2{
+
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 440px;
+    /* margin-bottom: 100px;
+    margin-top: 100px; */
+    /* margin-left: 0px; */
+}
+
+.work img{
+    width: 100%; 
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.work2 img{
+    width: 100%; 
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;  /*  have to put it back to 100 */
+    background: linear-gradient(rgba(0,0,0,0.5), #900909);
+    border-radius: 10px; /* till here the description for my projects was below the image */
+    position: absolute;   /* from here downwards the description for my projects will move on the images */
+    left: 0;
+    bottom: 0;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer2{
+
+    width: 100%;
+    height: 0%;  /*  have to put it back to 100 */
+    background: linear-gradient(rgba(0,0,0,0.5), #900909);
+    border-radius: 10px; /* till here the description for my projects was below the image */
+    position: absolute;   /* from here downwards the description for my projects will move on the images */
+    left: 0;
+    bottom: 0;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer2 h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: rgb(44, 59, 153);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.layer2 a{               
+    margin-top: 20px;
+    color: rgb(44, 59, 153);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work2:hover img{          /* this code is transforming (increasing the size with 1.1) */
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+/*  */
+.work2:hover .layer2{     /* this is for layer 2 to hover */
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(124, 12, 12);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition:background 0.5s;
+}
+
+.btn:hover{
+    background:rgb(127, 22, 22);
+
+}
+
+/* -----------contact-------------------- */
+
+.contact-left{
+    flex-basis: 35%;
+}
+/*  */
+.contact-right{
+    flex-basis: 60%;  /* width */  
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: rgb(127, 22, 22);
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: rgb(123, 32, 32);    
+    display: inline-block;
+    transition: transform 0.5s;
+}
+/*  */
+.social-icons a:hover{
+    color:rgb(127, 22, 22);
+    transform: translateY(-5px);       /* we move the icon a bit up */
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: rgb(127, 22, 22);
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;            /* the width of the form */
+    border: 0;
+    outline: none;
+    background: rgb(161, 190, 204);  /* background*/
+    padding: 15px;  
+    margin: 15px 0; /* margin in between the fields */
+    color: #fff;  /*color for the text  */
+    font-size: 18px; /*size for the text  */
+    border-radius: 6px; /*border for the fields*/
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.copyright{
+     width: 100%;
+     text-align: center;
+     padding: 25px 0;
+     background: rgb(32, 30, 30);
+     font-weight: 300;
+     margin-top: 20px;
+
+}
+
+/* -------------CSS for small screen---------------------- */
+
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header {
+        background-image: url(images/background_image.PNG);
+}
+
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: rgb(127, 22, 22);
+        position: fixed;
+        top: 0;
+        right: -200px; /* this is for the nav ul to be hidden on small size screen */
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+  
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    /* Abut me section */
+
+    .about-col-1 img{     /* this is for about-me image which is inside class .about-col-1 */
+        width: 220px;
+        height: 250px;
+        border-radius: 10px;
+        margin-top: 350px;
+        margin-left: 90px;
+    }
+
+    p{
+        font-size: 15px;
+        margin-right: 200px;
+        padding-right: 0px;
+         /* margin-top: 0px; */
+        /* align-items: center;
+       padding-right: 35px;*/
+       display: inline; 
+    } 
+
+    .sub-title{
+        font-size: 40px;     /*contact me text  */
+        /* font-weight: 600;
+        color: aliceblue;
+        margin-top: 0; */
+    }
+    /*  */
+    .sub-title3{
+        font-size: 40px;       /* My Projects text */
+        /* font-weight: 600;
+        color: aliceblue;
+        margin-top: 0;
+        margin-left: -30px; */
+    }
+                            /* This is for the About-me H1 */
+    .sub-title1{    
+        font-size: 40px;      /*  about me text*/
+        margin-top: -100px;
+        /* font-weight: 600;    
+        color: aliceblue;
+        margin-top: 30px; */
+        /* border-bottom: 3px solid #6d0e0e;   this is for the border under the about me */
+        
+    }
+
+
+     /* skills selection */
+
+    .skills-list{
+        /* display: grid; */
+        grid-template-columns: repeat(auto-fit, minmax 100px, 2fr); /* fr stands for fraction */
+        grid-gap: 22px;
+        margin-top: -15px;
+        margin-left: 0px;
+        margin-right: 50px;
+        display: block;
+        margin-top: 300px;
+       
+
+
+    } 
+
+
+
+        
+    /* Project section */
+
+    .work-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5px, 1fr)); /* fr stands for fraction */
+        grid-gap: 150px;
+        margin-top: 50px;
+        display: block;
+    }
+    
+    .work2-list2{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5px, 1fr)); /* fr stands for fraction */
+        grid-gap: 150px;
+        margin-top: 10px;
+        /* margin-bottom: 135px;
+        margin-left: -110px;
+        margin-right: -100px; */
+        display: block;
+        margin-left: 0px;
+    }
+
+    .work{
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        width: 240px;
+        height: 300px;
+    } 
+    
+    .work2{
+    
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        width: 240px;
+        height: 300px;
+    }
+    
+    
+    /* .tab-titles{
+        display: flex;
+        margin: 20px 0 40px; 20 px from the top, 0 form left to right, and 40 from the bottom 
+     */
+
+    
+
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+
+}
+
+#msg{
+    color: #691b1b;
+    margin-top: -40px;
+    display: block;
+}
+
+/*  */
+
+/* Image by rawpixel.com */

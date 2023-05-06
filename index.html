@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <script src="https://kit.fontawesome.com/338e2eb9ac.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Solway:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="images/png" sizes="32x32" href="images\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images\favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+</head>
+<!-- this is the header -->
+
+<body>
+    <div id="header">
+        <img src="images/mylogo.png" class="logo">
+        <nav>
+
+
+            <ul id="sideMenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <!-- <li><a href="#my skills">My Skills</a></li> -->
+                <li><a href="#my-projects">My Projects</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="container">
+
+            <div class="header-text">
+                <!-- <p>Data engineer web developer</p> -->
+                <div id="carousel"></div>
+                <h1>Hi, I'm <span> Alexandru Stoica</span></h1>
+            </div>
+        </div>
+        <!-- -----------------about---------------- -->
+    </div>
+    <div id="about-me">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-me.png" alt=" my image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title1"> About me </h1>
+                    <h2 style="color: white;">Name: <span>Alexandru Stoica</span></h2>
+                    <h2 style="color: white;"> Profession: <span>Freelancer</span> </h2>
+                    <p style="color: white"><br>I am an aspiring software developer based
+                        in North West London. I have a
+                        passion
+                        for creating and learning new things. I'm currently looking for a junior software developer role
+                        where I can continue to grow my knowledge and learn new skills. <br></p>
+                    <p style="color: white">
+                        <br> I have just recently graduated from a 3 month intensive software development Bootcamp,
+                        where I
+                        learnt and practiced in depth essential skills, including HTML, CSS, JavaScript, Python and
+                        MySql. You will find a full list of my skills below. <br> <br>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------skills----------------- -->
+
+    <!-- <div id="my-skills"> -->
+    <div class="container">
+        <div class="skills-list">
+            <div>
+
+
+                <i class="fa-regular fa-file-code"></i> <!--using the favicon  -->
+                <h2>Front End developer</h2>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>XML</li>
+                </ul>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Back End developer</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>C++</li>
+                </ul>
+
+                <!-- <p>HTML5 CSS JavaScript.</p> -->
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-database"></i>
+                <h2>Databases</h2>
+                <ul>
+                    <li>Relational Databases</li>
+                    <li>SQL Databases</li>
+                    <li>Object-Oriented Databases</li>
+                </ul>
+
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+
+        </div>
+
+    </div>
+    <!-- </div> -->
+
+    <!-- ---------------portfolio---------------- -->
+
+    <div id="my-projects">
+        <div class="container">
+            <h1 class="sub-title3"> <br> My Projects</h1>
+            <div class="work-list">
+
+
+                <div class="work">
+                    <img src="images/background_image.PNG" alt="my projects">
+
+                    <div class="layer">
+                        <!-- https://replit.com/@alexandrosstoic/FilmFlix-1?v=1 -->
+                        <iframe src="https://replit.com/@alexandrosstoic/FilmFlix?embed=true" width="100%" height="100%"
+                            frameborder="0"></iframe>
+                        <h2>Breakdown Database Project</h2>
+                        <h3> This project was created using
+                            Python and SQL. Click the <span style="color: rgb(182, 159, 159);">"Run"</span> button above
+                            to run the
+                            FilmFlix project. </h3>
+
+                        <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                    </div>
+                </div>
+                <!-- here -->
+                <div class="work">
+                    <img src="images/background_image.PNG" alt="my projects">
+                    <div class="layer">
+                        <!-- https://replit.com/@alexandrosstoic/Card?v=1 -->
+                        <iframe src="https://replit.com/@alexandrosstoic/Card?embed=true" width="100%" height="100%"
+                            frameborder="0"></iframe>
+                        <h2>Card Matching Game Project</h2>
+                        <h3> This project was
+                            created using HTML, CSS and JavaScript. Click the <span
+                                style="color: rgb(182, 159, 159);">"Open on Replit"</span> button above to
+                            start the game in Replit. </h3>
+                        <!-- https://replit.com/@alexandrosstoic/Memory-game?v=1 -->
+                        <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container2">
+
+
+            <div class="work2-list2">
+
+                <div class="work2">
+                    <img src="images/background_image.PNG" alt="my projects">
+
+                    <!--  -->
+                    <div class="layer2">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mC25DpV4J7s"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <br>
+                        <h2>Breakdown Company Database Project</h2>
+                        <h3> This project was
+                            created using MySQL. Click the <span style="color: rgb(182, 159, 159);">"Play Button"</span>
+                            above to
+                            start the Project. </h3>
+                        <!-- this is the recorded Python game video for my project -->
+
+                        <!-- <video width="640" height="360" controls>
+                            <source src="videos/Python-project-recorded.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+
+                        <h3>Python Project</h3> -->
+
+                        <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                    </div>
+                </div>
+
+
+
+                <div class="work2">
+                    <img src="images/background_image.PNG" alt="my projects">
+
+                    <!--  -->
+                    <div class="layer2">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/i9jfWvr2K-w"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <br>
+                        <h2>Armageddon Python Game Project</h2>
+                        <h3> This game project was
+                            created using Python. Click the <span style="color: rgb(182, 159, 159);">"Play
+                                Button"</span>
+                            above to
+                            start the Project. </h3>
+                        <!-- this is the recorded Python game  video for my project -->
+                        <!-- <source src="videos/Python-project-recorded.mp4" type="video/mp4"> -->
+                        <!-- Your browser does not support the video tag.
+
+
+                        <h3>Python Project</h3> -->
+
+                        <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                    </div>
+                </div>
+
+                <!-- <div class="work2">
+                    <img src="images/background_image.PNG" alt="my projects">
+                    <div class="layer2">
+                         https://replit.com/@alexandrosstoic/Card?v=1 -->
+                <!-- <video width="640" height="360" controls> -->
+                <!-- this is the recorded Python game  video for my project -->
+                <!-- <source src="videos/MySQLVideo.mp4" type="video/mp4"> -->
+                <!-- Your browser does not support the video tag. -->
+                <!-- </video> -->
+                <!-- <h3>MySQL Database</h3> -->
+                <!-- https://replit.com/@alexandrosstoic/Memory-game?v=1 -->
+                <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                <!-- </div> -->
+                <!-- </div> -->
+
+
+
+
+            </div>
+        </div>
+
+
+        <!-- <a href="#" class="btn">See more</a> -->
+
+    </div>
+
+
+
+
+
+    <!-- ------------contact------------ -->
+
+    <div id="contact-me">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> alexstoica78@yahoo.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 07770248354</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/alexandru-stoica-681119204/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AlexStoica78"><i class="fa-brands fa-github"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-linkedin"></i></a> -->
+                    </div>
+
+                    <a href="images/MyCV.pdf" download class="btn btn2">Download CV</a>
+                    <!--we just added another class btn2, to be able to change position etc -->
+                    <!--when i say class btn, it will change it automatically  -->
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder=" Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <!--adding again the button, and it appears -->
+                    </form>
+                    <!-- I was setting up email notification to let me know when I receive a new form -->
+                    <!-- steps: Tools - Notification settings - edit notifications -user submits a form - email straight away -->
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © Alex</p>
+        </div>
+
+
+
+    </div>
+
+
+    <script>
+
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove("active-link");  // this will remove the active class name
+            }
+
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");  // this will remove the active class name
+            }
+
+            event.currentTarget.classList.add("active-link");  //
+            document.getElementById(tabName).classList.add("active-tab"); // this will add active tab class
+        }
+    </script>
+
+    <script>
+
+        var sideMenu = document.getElementById("sideMenu");
+
+        function openMenu() {
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sideMenu.style.right = "-200px";
+        }
+
+
+    </script>
+    <!-- This is the script for carousel -->
+    <script>
+        const carousel = document.getElementById("carousel");
+        const sentences = ["Web Designer", "Back End Developer", "Front End Developer", "Data Engineer"];
+        let sentenceIndex = 0;
+
+        setInterval(() => {
+            carousel.innerText = sentences[sentenceIndex];
+            sentenceIndex = (sentenceIndex + 1) % sentences.length;
+        }, 2000);
+    </script>
+
+
+    <!-- This script code is for the form -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzaQW4X7ZH64fA0bpJxSHHgirxvVzVegmrYOUIz_fjHG_i-b-s_M-c8clT6VI8lgz4/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)     // this code will be executed after the message is sent (5 seconds)
+                    form.reset()  // reset form, this code will reset the form data 
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <!-- sticky function -->
+    <script>
+        window.onscroll = function () { stickyNav() };
+
+        var header = document.getElementsByTagName("header")[0];
+        var nav = header.getElementsByTagName("nav")[0];
+        var sticky = nav.offsetTop;
+
+        function stickyNav() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+<!-- "Logo" by LogoMakr (LogoMakr.com/app) -->
